@@ -2,177 +2,190 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NASH • 2026 • Week 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NASH Principal Exam Reviewer</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: "Segoe UI", Inter, Arial;
-        background: #f3f4f6;
-        color: #1f2937;
-    }
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f4f8ff, #eefaf6);
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+}
 
-    /* HEADER – HISTORY BLUE */
-    header {
-        background: linear-gradient(135deg, #1e3a8a, #1e40af);
-        color: #ffffff;
-        padding: 30px 16px;
-        text-align: center;
-        border-bottom: 3px solid #facc15;
-        box-shadow: 0 4px 14px rgba(0,0,0,.25);
-        position: relative;
-    }
-    header h1 {
-        margin: 0;
-        font-size: 32px;
-        font-weight: 800;
-        letter-spacing: .5px;
-    }
-    header p {
-        margin: 6px 0 0;
-        font-size: 14px;
-        opacity: .9;
-        font-weight: 500;
-    }
+/* HEADER */
+header {
+    background: linear-gradient(to right, #5f8fcf, #7bb7a4);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
 
-    /* DASHBOARD BUTTON */
-    .dash-btn {
-        position: absolute;
-        top: 16px;
-        right: 18px;
-        background: #facc15;
-        color: #1f2937;
-        padding: 8px 14px;
-        border-radius: 8px;
-        font-size: 13px;
-        font-weight: 700;
-        text-decoration: none;
-        transition: background .2s;
-    }
-    .dash-btn:hover {
-        background: #eab308;
-    }
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
 
-    /* QUOTE – CLASSIC PAPER LOOK */
-    .quote {
-        margin: 26px auto;
-        max-width: 780px;
-        padding: 18px 22px;
-        border-radius: 14px;
-        background: #ffffff;
-        color: #1f2937;
-        font-style: italic;
-        font-size: 16px;
-        box-shadow: 0 3px 12px rgba(0,0,0,.1);
-        border-left: 6px solid #1e40af;
-    }
+.subtext {
+    margin-top: 8px;
+    font-size: 16px;
+    opacity: 0.95;
+}
 
-    .container {
-        max-width: 850px;
-        margin: 0 auto;
-        padding: 16px;
-    }
+/* CONTAINER */
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
 
-    /* CARD DESIGN */
-    .card {
-        padding: 20px;
-        margin-bottom: 18px;
-        border-radius: 16px;
-        border: 1px solid #e5e7eb;
-        background: #ffffff;
-        box-shadow: 0 4px 14px rgba(0,0,0,.1);
-        transition: transform .15s, box-shadow .15s;
-    }
-    .card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 20px rgba(0,0,0,.15);
-    }
-    .card h2 {
-        margin: 0 0 10px;
-        font-size: 19px;
-        font-weight: 700;
-        color: #1e3a8a;
-    }
+/* SECTION CARD */
+.section {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
 
-    /* ACCENT BORDERS PER QUIZ */
-    .m1 { border-left: 6px solid #1e40af; }
-    .m2 { border-left: 6px solid #047857; }
-    .m3 { border-left: 6px solid #7c3aed; }
-    .m4 { border-left: 6px solid #b45309; }
+.section:hover {
+    transform: translateY(-3px);
+}
 
-    .bonus {
-        border-left: 6px solid #dc2626;
-        background: #fff7ed;
-    }
+/* SECTION TITLES */
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 
-    /* BUTTON */
-    a.btn {
-        display: inline-block;
-        margin-top: 12px;
-        padding: 10px 18px;
-        text-decoration: none;
-        background: #1e40af;
-        color: white;
-        border-radius: 10px;
-        font-weight: 600;
-        font-size: 14px;
-        transition: background .2s, transform .1s;
-    }
-    a.btn:hover {
-        background: #1e3a8a;
-        transform: scale(1.03);
-    }
+/* GRID LINKS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+}
 
-    footer {
-        margin: 32px 0 18px;
-        text-align: center;
-        font-size: 13px;
-        color: #6b7280;
-    }
+a {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    transition: 0.25s ease;
+    display: block;
+}
+
+/* COLOR THEMES */
+.sessions a {
+    background-color: #e3f0ff;
+    color: #2d5caa;
+}
+
+.sessions a:hover {
+    background-color: #cfe3ff;
+}
+
+.coaching a {
+    background-color: #e8f9f1;
+    color: #2f7d5f;
+}
+
+.coaching a:hover {
+    background-color: #d2f3e3;
+}
+
+.orange a {
+    background-color: #fff2e3;
+    color: #b56a00;
+}
+
+.orange a:hover {
+    background-color: #ffe4c7;
+}
+
+.filmore a {
+    background-color: #f2e9ff;
+    color: #6a4fb3;
+}
+
+.filmore a:hover {
+    background-color: #e4d6ff;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #6b6b6b;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <a class="dash-btn" href="dashboard.html">Dashboard</a>
-    <h1>NASH • Quarter 3 • Week 2</h1>
-    <p>Prepared by: Ma’am Eve</p>
+    <h1>NASH Principal Exam Reviewer</h1>
+    <div class="subtext">Consistency today. Principal tomorrow. 🌟</div>
 </header>
-
-<div class="quote">
-    “Sa pag-aaral ng kasaysayan, natututo tayong hindi lamang unawain ang mga digmaan—<br>kundi pahalagahan ang kapayapaang pinaghirapan ng mundo.”
-</div>
 
 <div class="container">
 
-    <div class="card m1">
-        <h2>Domain 1 Leading Strategically</h2>
-        <a class="btn" href="Domain 1 Leading Strategically.html">Open Interactive Quiz</a>
+    <!-- NASH Sessions -->
+    <div class="section sessions">
+        <h2>📘 NASH Marathon Sessions (1–10)</h2>
+        <div class="grid">
+            <a href="NASH Marathon Session 1.html">Session 1</a>
+            <a href="NASH Marathon Session 2.html">Session 2</a>
+            <a href="NASH Marathon Session 3.html">Session 3</a>
+            <a href="NASH Marathon Session 4.html">Session 4</a>
+            <a href="NASH Marathon Session 5.html">Session 5</a>
+            <a href="NASH Marathon Session 6.html">Session 6</a>
+            <a href="NASH Marathon Session 7.html">Session 7</a>
+            <a href="NASH Marathon Session 8.html">Session 8</a>
+            <a href="NASH Marathon Session 9.html">Session 9</a>
+            <a href="NASH Marathon Session 10.html">Session 10</a>
+        </div>
     </div>
 
-    <div class="card m2">
-        <h2>Quiz 2 — League of Nations</h2>
-        <a class="btn" href="AP8 Q3 Week 2-2 League of Nations.html">Open Interactive Quiz</a>
+    <!-- Final Coaching -->
+    <div class="section coaching">
+        <h2>🎯 Final Coaching (Day 3–6)</h2>
+        <div class="grid">
+            <a href="NASH Final Coaching Day 3.html">Day 3</a>
+            <a href="NASH Final Coaching Day 4.html">Day 4</a>
+            <a href="NASH Final Coaching Day 5.html">Day 5</a>
+            <a href="NASH Final Coaching Day 6.html">Day 6</a>
+        </div>
     </div>
 
-    <div class="card m3">
-        <h2>Quiz 3 — Spanish Flu</h2>
-        <a class="btn" href="AP8 Q3 Week 2-3 Spanish Flu.html">Open Interactive Quiz</a>
+    <!-- Orange Book -->
+    <div class="section orange">
+        <h2>🧡 Orange Book (Set A–C)</h2>
+        <div class="grid">
+            <a href="NASH Orange Set A.html">Set A</a>
+            <a href="NASH Orange Set B.html">Set B</a>
+            <a href="NASH Orange Set C.html">Set C</a>
+        </div>
     </div>
 
-    <div class="card m4">
-        <h2>Quiz 4 — Great Depression</h2>
-        <a class="btn" href="AP8 Q3 Week 2-4 Great Depression.html">Open Interactive Quiz</a>
+    <!-- Filmore Book -->
+    <div class="section filmore">
+        <h2>📚 Filmore Book (1–3)</h2>
+        <div class="grid">
+            <a href="NASH 1 Filmore.html">Filmore 1</a>
+            <a href="NASH 2 Filmore.html">Filmore 2</a>
+            <a href="NASH 3 Filmore.html">Filmore 3</a>
+        </div>
     </div>
-
-    
 
 </div>
 
 <footer>
-    © 2025 • AP8 Learning Materials
+    “Small daily improvements lead to stunning results.” ✨  
+    <br>Future Principal in the making 💙
 </footer>
 
 </body>
