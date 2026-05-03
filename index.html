@@ -6,125 +6,223 @@
 <title>NASH Principal Exam Reviewer</title>
 
 <style>
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #f4f8ff, #eefaf6);
-    margin: 0;
-    padding: 0;
-    color: #2c3e50;
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#f5f9ff,#eefbf5);
+    margin:0;
+    padding:0;
+    color:#2c3e50;
 }
 
 /* HEADER */
-header {
-    background: linear-gradient(to right, #5f8fcf, #7bb7a4);
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
+header{
+    background:linear-gradient(135deg,#6d9eea,#7ec9b2);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 30px;
+header h1{
+    margin:0;
+    font-size:34px;
+    letter-spacing:0.5px;
 }
 
-.subtext {
-    margin-top: 8px;
-    font-size: 16px;
-    opacity: 0.95;
+.subtext{
+    margin-top:10px;
+    font-size:16px;
+    opacity:0.95;
 }
 
 /* CONTAINER */
-.container {
-    width: 92%;
-    max-width: 1100px;
-    margin: 40px auto;
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:35px auto;
 }
 
-/* SECTION CARD */
-.section {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 18px;
-    margin-bottom: 30px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    transition: 0.3s ease;
+/* SECTION */
+.section{
+    background:#ffffff;
+    padding:28px;
+    border-radius:24px;
+    margin-bottom:28px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.05);
+    transition:0.3s ease;
 }
 
-.section:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.06);
+.section:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 28px rgba(0,0,0,0.07);
 }
 
-/* SECTION TITLES */
-.section h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-weight: 700;
-    letter-spacing: 0.3px;
+.section h2{
+    margin-top:0;
+    margin-bottom:22px;
+    font-size:24px;
+    font-weight:700;
 }
 
-/* GRID LINKS */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 12px;
+/* GROUP */
+.group{
+    margin-bottom:16px;
 }
 
-a {
-    text-decoration: none;
-    padding: 12px;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: 500;
-    transition: 0.25s ease;
-    display: block;
-    border: 1px solid rgba(255,255,255,0.3);
+.group:last-child{
+    margin-bottom:0;
 }
 
-/* COLOR THEMES */
-.sessions a {
-    background-color: #e3f0ff;
-    color: #2d5caa;
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:12px;
 }
 
-.sessions a:hover {
-    background-color: #cfe3ff;
+/* LINKS */
+a{
+    text-decoration:none;
+    padding:14px;
+    border-radius:15px;
+    text-align:center;
+    font-weight:600;
+    transition:0.25s ease;
+    display:block;
+    box-shadow:0 3px 10px rgba(0,0,0,0.04);
+    border:1px solid rgba(255,255,255,0.4);
 }
 
-.coaching a {
-    background-color: #e8f9f1;
-    color: #2f7d5f;
+a:hover{
+    transform:translateY(-2px) scale(1.02);
 }
 
-.coaching a:hover {
-    background-color: #d2f3e3;
+/* ===== MOCK TESTS ===== */
+
+/* Mock HTML */
+.mock-html a{
+    background:linear-gradient(135deg,#dfeeff,#edf5ff);
+    color:#2d5caa;
 }
 
-.orange a {
-    background-color: #fff2e3;
-    color: #b56a00;
+.mock-html a:hover{
+    background:linear-gradient(135deg,#cfe4ff,#e1efff);
 }
 
-.orange a:hover {
-    background-color: #ffe4c7;
+/* Mock Google Forms */
+.mock-gf a{
+    background:linear-gradient(135deg,#e7f7ff,#f1fbff);
+    color:#1d78a5;
 }
 
-.filmore a {
-    background-color: #f2e9ff;
-    color: #6a4fb3;
+.mock-gf a:hover{
+    background:linear-gradient(135deg,#d8f1ff,#e7f8ff);
 }
 
-.filmore a:hover {
-    background-color: #e4d6ff;
+/* ===== MAIN REVIEW ===== */
+
+/* Pre-Mock / Master / Final */
+.review-core a{
+    background:linear-gradient(135deg,#e7faf0,#f2fff8);
+    color:#2d7a5e;
+}
+
+.review-core a:hover{
+    background:linear-gradient(135deg,#d9f5e7,#ebfff4);
+}
+
+/* Filmore */
+.review-filmore a{
+    background:linear-gradient(135deg,#f0ecff,#faf8ff);
+    color:#6750b5;
+}
+
+.review-filmore a:hover{
+    background:linear-gradient(135deg,#e6ddff,#f5f1ff);
+}
+
+/* Orange Book */
+.review-orange a{
+    background:linear-gradient(135deg,#fff2df,#fff9f0);
+    color:#b86c00;
+}
+
+.review-orange a:hover{
+    background:linear-gradient(135deg,#ffe7c8,#fff3e0);
+}
+
+/* ===== INTENSIVE ===== */
+
+/* Marathon */
+.intense-marathon a{
+    background:linear-gradient(135deg,#e9f4ff,#f5faff);
+    color:#456bb0;
+}
+
+.intense-marathon a:hover{
+    background:linear-gradient(135deg,#dbeeff,#edf6ff);
+}
+
+/* Huling Pabaon */
+.intense-pabaon a{
+    background:linear-gradient(135deg,#fff0f6,#fff8fb);
+    color:#b35682;
+}
+
+.intense-pabaon a:hover{
+    background:linear-gradient(135deg,#ffe5f1,#fff1f7);
+}
+
+/* Last Minute */
+.intense-last a{
+    background:linear-gradient(135deg,#f5efff,#fcf9ff);
+    color:#7a56b4;
+}
+
+.intense-last a:hover{
+    background:linear-gradient(135deg,#ece1ff,#f8f2ff);
+}
+
+/* ===== PRACTICE ===== */
+
+/* Practice */
+.practice-row a{
+    background:linear-gradient(135deg,#fff5e7,#fffbf4);
+    color:#ba7600;
+}
+
+.practice-row a:hover{
+    background:linear-gradient(135deg,#ffeccd,#fff5e7);
+}
+
+/* Trail */
+.trail-row a{
+    background:linear-gradient(135deg,#eef8ff,#f7fcff);
+    color:#4680aa;
+}
+
+.trail-row a:hover{
+    background:linear-gradient(135deg,#dff2ff,#eef8ff);
+}
+
+/* ===== READING ===== */
+
+.reading-row a{
+    background:linear-gradient(135deg,#eefcf4,#f7fff9);
+    color:#2f8a67;
+}
+
+.reading-row a:hover{
+    background:linear-gradient(135deg,#ddf7e9,#effff5);
 }
 
 /* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    color: #6b6b6b;
-    line-height: 1.7;
+footer{
+    text-align:center;
+    padding:28px;
+    font-size:14px;
+    color:#6b6b6b;
+    line-height:1.8;
 }
 </style>
 </head>
@@ -138,158 +236,127 @@ footer {
 
 <div class="container">
 
-    <!-- PRE-MOCK TESTS -->
-    <div class="section sessions">
-        <h2>⭐ Pre-Mock Tests</h2>
-        <div class="grid">
-            <a href="NASH Mock Test 1.html">Pre-Mock Test 1</a>
-            <a href="NASH Mock Test 2.html">Pre-Mock Test 2</a>
-            <a href="NASH Mock Test 3.html">Pre-Mock Test 3</a>
-        </div>
-    </div>
-
-    <!-- PRE-MOCK TESTS GOOGLE FORM -->
-    <div class="section sessions">
-        <h2>⭐ Pre-Mock Tests – Google Form</h2>
-        <div class="grid">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePEh0e69CeYb8nBseApSlDXTnQtcsN0GbNpgLiCOyPQDd8kg/viewform?pli=1&pli=1">Pre-Mock Test 1</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScd7ULQu44pXkHLoxNyHAetaxhWexmpZvGAp17mOqO3vg2pdw/viewform">Pre-Mock Test 2</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4KB2L8fVqjyyYfMeFL2PHYpYGF_Naec0_gDD9qRMWFeFPJA/viewform">Pre-Mock Test 3</a>
-        </div>
-    </div>
-
     <!-- MOCK TESTS -->
-    <div class="section sessions">
-        <h2>⭐ Official Mock Tests</h2>
-        <div class="grid">
-            <a href="NASH Mock Test 1.html">Mock Test 1</a>
-            <a href="NASH Mock Test 2.html">Mock Test 2</a>
-            <a href="NASH Mock Test 3.html">Mock Test 3</a>
+    <div class="section">
+        <h2>⭐ Mock Tests</h2>
+
+        <div class="group mock-html">
+            <div class="grid">
+                <a href="NASH Mock Test 1.html">Mock Test 1</a>
+                <a href="NASH Mock Test 2.html">Mock Test 2</a>
+                <a href="NASH Mock Test 3.html">Mock Test 3</a>
+                <a href="NASH Mock Test 4.html">Mock Test 4</a>
+            </div>
+        </div>
+
+        <div class="group mock-gf">
+            <div class="grid">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSePEh0e69CeYb8nBseApSlDXTnQtcsN0GbNpgLiCOyPQDd8kg/viewform?pli=1&pli=1">Mock Test GF 1</a>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScd7ULQu44pXkHLoxNyHAetaxhWexmpZvGAp17mOqO3vg2pdw/viewform">Mock Test GF 2</a>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4KB2L8fVqjyyYfMeFL2PHYpYGF_Naec0_gDD9qRMWFeFPJA/viewform">Mock Test GF 3</a>
+
+                <a href="https://forms.office.com/r/d8tWDG2AXQ?origin=QRCode">Mock Test MS 4</a>
+            </div>
         </div>
     </div>
 
-    <!-- MOCK TESTS GOOGLE FORM -->
-    <div class="section sessions">
-        <h2>⭐ Official Mock Tests – Google Form</h2>
-        <div class="grid">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSePEh0e69CeYb8nBseApSlDXTnQtcsN0GbNpgLiCOyPQDd8kg/viewform?pli=1&pli=1">NASH Mock Test 1</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScd7ULQu44pXkHLoxNyHAetaxhWexmpZvGAp17mOqO3vg2pdw/viewform">NASH Mock Test 2</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4KB2L8fVqjyyYfMeFL2PHYpYGF_Naec0_gDD9qRMWFeFPJA/viewform">NASH Mock Test 3</a>
+    <!-- MAIN REVIEW -->
+    <div class="section">
+        <h2>📚 Main Review</h2>
+
+        <div class="group review-core">
+            <div class="grid">
+                <a href="NASH Pre-Mock Test.html">Pre-Mock</a>
+                <a href="NASH Master Class.html">Master Class</a>
+                <a href="NASH Final Coaching.html">Final Coaching</a>
+            </div>
+        </div>
+
+        <div class="group review-filmore">
+            <div class="grid">
+                <a href="NASH Filmore 1.html">Filmore 1</a>
+                <a href="NASH Filmore 2.html">Filmore 2</a>
+                <a href="NASH Filmore 3.html">Filmore 3</a>
+            </div>
+        </div>
+
+        <div class="group review-orange">
+            <div class="grid">
+                <a href="NASH Orange Set A.html">Orange Book A</a>
+                <a href="NASH Orange Set B.html">Orange Book B</a>
+                <a href="NASH Orange Set C.html">Orange Book C</a>
+            </div>
         </div>
     </div>
 
-    <!-- FILMORE -->
-    <div class="section filmore">
-        <h2>📚 Filmore Series</h2>
-        <div class="grid">
-            <a href="NASH Filmore 1-1.html">Filmore 1</a>
-            <a href="NASH Filmore 1-2.html">Filmore 2</a>
-            <a href="NASH Filmore 2-1.html">Filmore 3</a>
-            <a href="NASH Filmore 2-2.html">Filmore 4</a>
-        </div>
-    </div>
+    <!-- INTENSIVE REVIEW -->
+    <div class="section">
+        <h2>🔥 Intensive Review</h2>
 
-    <!-- MASTER CLASS -->
-    <div class="section coaching">
-        <h2>🎯 Master Class</h2>
-        <div class="grid">
-            <a href="NASH Final Coaching 1.html">Master Class 1</a>
-            <a href="NASH Final Coaching 2.html">Master Class 2</a>
+        <div class="group intense-marathon">
+            <div class="grid">
+                <a href="NASH Marathon 1.html">Marathon 1</a>
+                <a href="NASH Marathon 2.html">Marathon 2</a>
+                <a href="NASH Marathon 3.html">Marathon 3</a>
+                <a href="NASH Marathon 4.html">Marathon 4</a>
+            </div>
         </div>
-    </div>
 
-    <!-- HULING PABAON APRIL -->
-    <div class="section coaching">
-        <h2>🎁 Huling Pabaon – April</h2>
-        <div class="grid">
-            <a href="NASH Final Coaching 1.html">Huling Pabaon 1</a>
-            <a href="NASH Final Coaching 2.html">Huling Pabaon 2</a>
+        <div class="group intense-pabaon">
+            <div class="grid">
+                <a href="NASH Final Coaching 1.html">Huling Pabaon April 1</a>
+                <a href="NASH Final Coaching 2.html">Huling Pabaon April 2</a>
+                <a href="NASH Final Coaching 1.html">Huling Pabaon May 1</a>
+                <a href="NASH Final Coaching 2.html">Huling Pabaon May 2</a>
+            </div>
         </div>
-    </div>
 
-    <!-- HULING PABAON MAY -->
-    <div class="section coaching">
-        <h2>🎁 Huling Pabaon – May</h2>
-        <div class="grid">
-            <a href="NASH Final Coaching 1.html">Huling Pabaon 1</a>
-            <a href="NASH Final Coaching 2.html">Huling Pabaon 2</a>
-        </div>
-    </div>
-
-    <!-- LAST MINUTE COACHING -->
-    <div class="section coaching">
-        <h2>🔥 Last Minute Coaching</h2>
-        <div class="grid">
-            <a href="NASH Final Coaching 1.html">Last Minute Coaching 1</a>
-            <a href="NASH Final Coaching 2.html">Last Minute Coaching 2</a>
-            <a href="NASH Final Coaching 2.html">Last Minute Coaching 3</a>
-            <a href="NASH Final Coaching 2.html">Last Minute Coaching 4</a>
-            <a href="NASH Final Coaching 2.html">Last Minute Coaching 5</a>
-        </div>
-    </div>
-
-    <!-- MARATHON -->
-    <div class="section sessions">
-        <h2>📘 Marathon Sessions</h2>
-        <div class="grid">
-            <a href="NASH Marathon Session 1.html">Marathon 1</a>
-            <a href="NASH Marathon Session 2.html">Marathon 2</a>
-            <a href="NASH Marathon Session 3.html">Marathon 3</a>
-            <a href="NASH Marathon Session 4.html">Marathon 4</a>
-            <a href="NASH Marathon Session 5.html">Marathon 5</a>
-        </div>
-    </div>
-
-    <!-- FINAL COACHING -->
-    <div class="section coaching">
-        <h2>🎯 Final Coaching</h2>
-        <div class="grid">
-            <a href="NASH Final Coaching 1.html">Final Coaching 1</a>
-            <a href="NASH Final Coaching 2.html">Final Coaching 2</a>
-        </div>
-    </div>
-
-    <!-- TRAIL NASH -->
-    <div class="section orange">
-        <h2>🧡 Trail NASH Domains</h2>
-        <div class="grid">
-            <a href="NASH Orange Set A.html">Domain 1</a>
-            <a href="NASH Orange Set B.html">Domain 2</a>
-            <a href="NASH Orange Set C.html">Domain 3</a>
-            <a href="NASH Orange Set C.html">Domain 4</a>
-            <a href="NASH Orange Set C.html">Domain 5</a>
+        <div class="group intense-last">
+            <div class="grid">
+                <a href="NASH Final Coaching 1.html">Last Minute 1</a>
+                <a href="NASH Final Coaching 2.html">Last Minute 2</a>
+                <a href="NASH Final Coaching 2.html">Last Minute 3</a>
+                <a href="NASH Final Coaching 2.html">Last Minute 4</a>
+            </div>
         </div>
     </div>
 
     <!-- PRACTICE TESTS -->
-    <div class="section orange">
+    <div class="section">
         <h2>📝 Practice Tests</h2>
-        <div class="grid">
-            <a href="NASH Orange Set A.html">Practice Test 1</a>
-            <a href="NASH Orange Set B.html">Practice Test 2</a>
-            <a href="NASH Orange Set C.html">Practice Test 3</a>
-            <a href="NASH Orange Set C.html">Practice Test 4</a>
-            <a href="NASH Orange Set C.html">Practice Test 5</a>
-        </div>
-    </div>
 
-    <!-- ORANGE BOOK -->
-    <div class="section orange">
-        <h2>🧡 Orange Book (Set A–C)</h2>
-        <div class="grid">
-            <a href="NASH Orange Set A.html">Set A</a>
-            <a href="NASH Orange Set B.html">Set B</a>
-            <a href="NASH Orange Set C.html">Set C</a>
+        <div class="group practice-row">
+            <div class="grid">
+                <a href="NASH Orange Set A.html">Practice Test 1</a>
+                <a href="NASH Orange Set B.html">Practice Test 2</a>
+                <a href="NASH Orange Set C.html">Practice Test 3</a>
+                <a href="NASH Orange Set C.html">Practice Test 4</a>
+                <a href="NASH Orange Set C.html">Practice Test 5</a>
+            </div>
+        </div>
+
+        <div class="group trail-row">
+            <div class="grid">
+                <a href="NASH Orange Set A.html">Trail NASH 1</a>
+                <a href="NASH Orange Set B.html">Trail NASH 2</a>
+                <a href="NASH Orange Set C.html">Trail NASH 3</a>
+                <a href="NASH Orange Set C.html">Trail NASH 4</a>
+                <a href="NASH Orange Set C.html">Trail NASH 5</a>
+            </div>
         </div>
     </div>
 
     <!-- READING MATERIALS -->
-    <div class="section coaching">
+    <div class="section">
         <h2>📖 Reading Materials</h2>
-        <div class="grid">
-            <a href="https://heyzine.com/flip-book/4dd462daef.html">DO_s2020_024-PPSSH</a>
-            <a href="https://heyzine.com/flip-book/ea69376212.html">DO_s2015_44_SIP and SRC</a>
-            <a href="NASH Orange Set C.html">Set C</a>
+
+        <div class="group reading-row">
+            <div class="grid">
+                <a href="https://heyzine.com/flip-book/4dd462daef.html">PPSSH</a>
+                <a href="https://heyzine.com/flip-book/ea69376212.html">SIP & SRC</a>
+            </div>
         </div>
     </div>
 
