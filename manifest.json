@@ -1,11 +1,12 @@
+
 {
-  "name": "Ma'am Eve",
+  "name": "Ma'am Eve - NASH Reviewer",
   "short_name": "Ma'am Eve",
-  "start_url": "index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f8fafc",
   "theme_color": "#22c55e",
-  "description": "Ma'am Eve - NASH Reviewer",
+  "description": "Offline NASH Principal Exam Reviewer and Score Tracker",
   "icons": [
     {
       "src": "assets/icon-192.png",
